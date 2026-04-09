@@ -1,0 +1,13 @@
+<svg width="640" height="300" viewBox="0 0 640 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="300" rx="24" fill="#0F141B"/>
+  <g fill="#2DB7FF">
+    <polygon points="108,112 186,36 216,64 162,118"/>
+    <polygon points="176,118 243,53 276,86 212,149"/>
+    <polygon points="231,118 285,118 333,71 387,71 387,38 300,38"/>
+    <polygon points="274,150 387,150 387,118 307,118 238,186 153,186 120,219 387,219 387,186 231,186"/>
+    <polygon points="218,86 252,86 252,118 185,118"/>
+  </g>
+  <text x="320" y="258" text-anchor="middle" fill="#2DB7FF" font-family="Rajdhani, sans-serif" font-size="72" font-weight="700" letter-spacing="1.5">
+    BAUINGENIEURE
+  </text>
+</svg>
