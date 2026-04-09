@@ -4,22 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AZ-Bauingineure | Bauingenieurleistungen</title>
-    <meta
-      name="description"
-      content="AZ-Bauingineure - Tragwerksplanung, Bauleitung und Sanierung aus einer Hand."
-    />
+    <meta name="description" content="AZ-Bauingineure - Tragwerksplanung, Bauleitung und Sanierung aus einer Hand." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Roboto+Condensed:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <a class="logo" href="index.html">AZ-Bauingineure</a>
-      <nav class="main-nav" aria-label="Hauptnavigation">
+      <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
         <a href="index.html">Home</a>
         <a href="ueber-uns.html">Über uns</a>
         <a href="leistungen.html">Leistungen</a>
@@ -27,7 +21,14 @@
         <a href="referenzen.html">Referenzen</a>
         <a href="kontakt.html">Kontakt</a>
       </nav>
-      <a class="btn btn-outline" href="kontakt.html">Projekt anfragen</a>
+      <div class="header-actions">
+        <a class="btn btn-outline" href="kontakt.html">Projekt anfragen</a>
+        <button class="burger-btn" id="burger-btn" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
 
     <main id="home">
@@ -46,24 +47,9 @@
         </div>
         <div class="hero-visual" aria-label="Bauprojekte Slideshow" data-hero-slider>
           <div class="hero-slider" aria-live="polite">
-            <img
-              src="building1.png"
-              alt="Modernes Gebaeudeprojekt von AZ Bauingenieure"
-              class="hero-slide is-active"
-              data-hero-slide
-            />
-            <img
-              src="building2.png"
-              alt="Architektonisches Bauvorhaben mit klarer Struktur"
-              class="hero-slide"
-              data-hero-slide
-            />
-            <img
-              src="building3.png"
-              alt="Zeitgemaesses Gebaeude mit hochwertiger Planung"
-              class="hero-slide"
-              data-hero-slide
-            />
+            <img src="building1.png" alt="Modernes Gebaeudeprojekt von AZ Bauingenieure" class="hero-slide is-active" data-hero-slide />
+            <img src="building2.png" alt="Architektonisches Bauvorhaben mit klarer Struktur" class="hero-slide" data-hero-slide />
+            <img src="building3.png" alt="Zeitgemaesses Gebaeude mit hochwertiger Planung" class="hero-slide" data-hero-slide />
           </div>
           <div class="hero-indicators" aria-label="Slideshow Navigation">
             <button class="hero-indicator is-active" type="button" data-hero-indicator aria-label="Bild 1 anzeigen"></button>
@@ -124,16 +110,11 @@
               <div class="service-body">
                 <span class="service-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" role="img">
-                    <path d="M4 19h16" />
-                    <path d="M5 19V9l7-4 7 4v10" />
-                    <path d="M9 19v-5h6v5" />
+                    <path d="M4 19h16" /><path d="M5 19V9l7-4 7 4v10" /><path d="M9 19v-5h6v5" />
                   </svg>
                 </span>
                 <h3>Tragwerksplanung / Statik</h3>
-                <p>
-                  Verlässliche statische Konzepte für sichere und wirtschaftliche
-                  Bauwerke.
-                </p>
+                <p>Verlässliche statische Konzepte für sichere und wirtschaftliche Bauwerke.</p>
               </div>
             </article>
             <article class="service-card service-card--objektplanung">
@@ -141,17 +122,11 @@
               <div class="service-body">
                 <span class="service-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" role="img">
-                    <path d="M3 6h18" />
-                    <path d="M5 6v12h14V6" />
-                    <path d="M9 10h6" />
-                    <path d="M9 14h4" />
+                    <path d="M3 6h18" /><path d="M5 6v12h14V6" /><path d="M9 10h6" /><path d="M9 14h4" />
                   </svg>
                 </span>
                 <h3>Objektplanung / Entwurfsverfasser</h3>
-                <p>
-                  Entwurfs- und Objektplanung mit klarem Fokus auf Funktion,
-                  Qualität und Genehmigungsfähigkeit.
-                </p>
+                <p>Entwurfs- und Objektplanung mit klarem Fokus auf Funktion, Qualität und Genehmigungsfähigkeit.</p>
               </div>
             </article>
             <article class="service-card service-card--schallschutz">
@@ -159,17 +134,11 @@
               <div class="service-body">
                 <span class="service-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" role="img">
-                    <path d="M7 15a4 4 0 0 0 0-6" />
-                    <path d="M10 18a8 8 0 0 0 0-12" />
-                    <path d="M13 21a12 12 0 0 0 0-18" />
-                    <path d="M5 12h.01" />
+                    <path d="M7 15a4 4 0 0 0 0-6" /><path d="M10 18a8 8 0 0 0 0-12" /><path d="M13 21a12 12 0 0 0 0-18" /><path d="M5 12h.01" />
                   </svg>
                 </span>
                 <h3>Schallschutz</h3>
-                <p>
-                  Fachgerechte Schallschutzkonzepte für Wohn- und Arbeitsqualität
-                  nach geltenden Anforderungen.
-                </p>
+                <p>Fachgerechte Schallschutzkonzepte für Wohn- und Arbeitsqualität nach geltenden Anforderungen.</p>
               </div>
             </article>
             <article class="service-card service-card--energie">
@@ -177,20 +146,11 @@
               <div class="service-body">
                 <span class="service-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" role="img">
-                    <path d="M12 3v4" />
-                    <path d="M12 17v4" />
-                    <path d="M4.8 7.8l2.8 2.1" />
-                    <path d="M16.4 14.1l2.8 2.1" />
-                    <path d="M4 12h4" />
-                    <path d="M16 12h4" />
-                    <circle cx="12" cy="12" r="3.5" />
+                    <path d="M12 3v4" /><path d="M12 17v4" /><path d="M4.8 7.8l2.8 2.1" /><path d="M16.4 14.1l2.8 2.1" /><path d="M4 12h4" /><path d="M16 12h4" /><circle cx="12" cy="12" r="3.5" />
                   </svg>
                 </span>
                 <h3>Energieberater</h3>
-                <p>
-                  Energieeffiziente Lösungen und Beratung für nachhaltige,
-                  förderfähige Bauprojekte.
-                </p>
+                <p>Energieeffiziente Lösungen und Beratung für nachhaltige, förderfähige Bauprojekte.</p>
               </div>
             </article>
             <article class="service-card service-card--brandschutz">
@@ -198,15 +158,11 @@
               <div class="service-body">
                 <span class="service-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" role="img">
-                    <path d="M12 3s4 4.2 4 7.6A4 4 0 1 1 8 10.6C8 7.2 12 3 12 3z" />
-                    <path d="M12 12.5c1 0 1.8.8 1.8 1.8A1.8 1.8 0 0 1 12 16a1.8 1.8 0 0 1-1.8-1.7c0-1 .8-1.8 1.8-1.8z" />
+                    <path d="M12 3s4 4.2 4 7.6A4 4 0 1 1 8 10.6C8 7.2 12 3 12 3z" /><path d="M12 12.5c1 0 1.8.8 1.8 1.8A1.8 1.8 0 0 1 12 16a1.8 1.8 0 0 1-1.8-1.7c0-1 .8-1.8 1.8-1.8z" />
                   </svg>
                 </span>
                 <h3>Brandschutz</h3>
-                <p>
-                  Praxisnahe Brandschutzplanung für sichere Nutzung und
-                  regelkonforme Umsetzung.
-                </p>
+                <p>Praxisnahe Brandschutzplanung für sichere Nutzung und regelkonforme Umsetzung.</p>
               </div>
             </article>
             <article class="service-card service-card--bauleitung">
@@ -214,18 +170,11 @@
               <div class="service-body">
                 <span class="service-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" role="img">
-                    <path d="M4 7h16" />
-                    <path d="M6 7v12h12V7" />
-                    <path d="M9 4h6" />
-                    <path d="M9 11h6" />
-                    <path d="M9 15h4" />
+                    <path d="M4 7h16" /><path d="M6 7v12h12V7" /><path d="M9 4h6" /><path d="M9 11h6" /><path d="M9 15h4" />
                   </svg>
                 </span>
                 <h3>Bauleitung / Bauüberwachung</h3>
-                <p>
-                  Verlässliche Steuerung von Qualität, Kosten und Terminen direkt
-                  in der Ausführung.
-                </p>
+                <p>Verlässliche Steuerung von Qualität, Kosten und Terminen direkt in der Ausführung.</p>
               </div>
             </article>
           </div>
@@ -234,10 +183,7 @@
         <section id="location" class="card reveal map-wrap section-location">
           <div>
             <h2>Unser Standort</h2>
-            <p>
-              Besuchen Sie uns vor Ort. Die Karte ist interaktiv, Sie können
-              zoomen und direkt eine Route starten.
-            </p>
+            <p>Besuchen Sie uns vor Ort. Die Karte ist interaktiv, Sie können zoomen und direkt eine Route starten.</p>
             <div class="location-contact" aria-label="Standort Kontaktinformationen">
               <p><strong>Telefon:</strong> <a href="tel:+494084501008">040 / 845 010 08</a></p>
               <p><strong>Adresse:</strong> 22303 Hamburg, Deutschland</p>
@@ -270,5 +216,25 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+      const burgerBtn = document.getElementById('burger-btn');
+      const mainNav = document.getElementById('main-nav');
+
+      burgerBtn.addEventListener('click', () => {
+        const isOpen = mainNav.classList.toggle('is-open');
+        burgerBtn.classList.toggle('is-open', isOpen);
+        burgerBtn.setAttribute('aria-expanded', isOpen);
+        burgerBtn.setAttribute('aria-label', isOpen ? 'Menü schließen' : 'Menü öffnen');
+      });
+
+      mainNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mainNav.classList.remove('is-open');
+          burgerBtn.classList.remove('is-open');
+          burgerBtn.setAttribute('aria-expanded', 'false');
+          burgerBtn.setAttribute('aria-label', 'Menü öffnen');
+        });
+      });
+    </script>
   </body>
 </html>
